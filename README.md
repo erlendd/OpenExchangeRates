@@ -1,4 +1,4 @@
-**About
+# About
 This is an (unofficial) Python API for use with OpenExchangeRates.org.
 It enables very simple conversion between common currencies using 
 data provided by the OpenExchangeRates.org API.
@@ -14,17 +14,19 @@ Some robustness via exception handling is implemented.
 This code comes with absolutely no guarantee or warranty. Nor does it come with any
 expectation of correctness. Use at your own risk.
 
-Requirements: Python-2.7.
+**Requirements: Python-2.7.**
 
-**Example of use
-
+# Example of use
 SECRET_KEY='insert key obtained from openexhcangerates.org'
 
-# Convert from USD to EURO:
+### Convert from USD to EURO:
+```python
 r = Rates('USD', 'EUR', SECRET_KEY)
 print r.convert(1.0)
+```
 
-# Convert from EURO to USD:
+### Convert from EURO to USD:
+```python
 r = Rates('EUR', 'USD', SECRET_KEY)
 print r.convert(2.0)
-
+```
